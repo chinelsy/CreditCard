@@ -1,0 +1,30 @@
+﻿@model CreditCard.Models.BookPurchaseVM
+@{ 
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CreditCard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div>
+
+        @if (Model.Success == true)
+         {
+            @:Your payment was Successful
+         }
+        else
+        {
+            @:Sorry Your payment failed!
+        }
+    </div>
+</body>
+</html>
